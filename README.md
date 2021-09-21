@@ -25,7 +25,7 @@ Section 1
 1. All fields are mandatory.
 2. Email & phone fields should be valid and properly formatted.
 
-● On clicking submit form users  get a message “Thank you for completing the information” and data is be stored locally on thedevice in browser storage. You can use any browser storage like(indexDb, local storage, session storage, etc).
+● On clicking submit form users  get a message “Thank you for completing the information” and data is stored locally on the device in browser storage(localStorage).
 
 Here is the attached screenshot of section 1
 
@@ -35,7 +35,9 @@ Here is the attached screenshot of section 1
 Section 2
 
 ● App shows a list of submissions from the browser storage (as saved in section 1 ) in Table
+
 ● I am using material-table to integrate my table
+
 ● Data is not lost on reloading the page.
 
 
