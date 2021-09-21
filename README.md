@@ -47,9 +47,13 @@ Here is the attached screenshot of section 2
 
 STEPS TO RUN THE APP
 
+
 Clone the repo to your desired location in your system
+
 Cd to the repo on your system and run npm i in the terminal to install all the required dependencies and packages.
+
 After that run npm start.
+
 Browse to localhost:3000 and you will see the app running there.
 
 
