@@ -1,21 +1,30 @@
 The react application has two sections
 
 Section 1
+
 ● Has a feedback form for a restaurant with the following questions and layout details.
+
 ● Form name: Aromatic Bar
+
 ● Form Description: We are committed to providing you with the best dining experience possible, so we welcome your comments. Please fill out this questionnaire. Thank you.
+
 ● Below are the text fields that are captured in the form.
 1. Customer Name:
 2. Email:
 3. Phone:
+
 ● Below are the following questions each with four options as checkbox i.e (Excellent, good, fair, bad).
+
 1. Please rate the quality of the service you received from your host.
 2. Please rate the quality of your beverage.
 3. Was our restaurant clean?
 4. Please rate your overall dining experience.
+
 ● On submission of the form, the following validations on the form fields are done and a proper message with validation error should be shown to the user.
+
 1. All fields are mandatory.
 2. Email & phone fields should be valid and properly formatted.
+
 ● On clicking submit form users  get a message “Thank you for completing the information” and data is be stored locally on thedevice in browser storage. You can use any browser storage like(indexDb, local storage, session storage, etc).
 
 Here is the attached screenshot of section 1
@@ -24,6 +33,7 @@ Here is the attached screenshot of section 1
 
 
 Section 2
+
 ● App shows a list of submissions from the browser storage (as saved in section 1 ) in Table
 ● I am using material-table to integrate my table
 ● Data is not lost on reloading the page.
