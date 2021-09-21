@@ -1,3 +1,48 @@
+The react application has two sections
+
+Section 1
+● Has a feedback form for a restaurant with the following questions and layout details.
+● Form name: Aromatic Bar
+● Form Description: We are committed to providing you with the best dining experience possible, so we welcome your comments. Please fill out this questionnaire. Thank you.
+● Below are the text fields that are captured in the form.
+1. Customer Name:
+2. Email:
+3. Phone:
+● Below are the following questions each with four options as checkbox i.e (Excellent, good, fair, bad).
+1. Please rate the quality of the service you received from your host.
+2. Please rate the quality of your beverage.
+3. Was our restaurant clean?
+4. Please rate your overall dining experience.
+● On submission of the form, the following validations on the form fields are done and a proper message with validation error should be shown to the user.
+1. All fields are mandatory.
+2. Email & phone fields should be valid and properly formatted.
+● On clicking submit form users  get a message “Thank you for completing the information” and data is be stored locally on thedevice in browser storage. You can use any browser storage like(indexDb, local storage, session storage, etc).
+
+Here is the attached screenshot of section 1
+
+![Screenshot (5)](https://user-images.githubusercontent.com/66476812/134195430-23b227b7-27df-4795-8f6c-819c7f3fac88.png)
+
+
+Section 2
+● App shows a list of submissions from the browser storage (as saved in section 1 ) in Table
+● I am using material-table to integrate my table
+● Data is not lost on reloading the page.
+
+
+Here is the attached screenshot of section 2
+
+
+![Screenshot (6)](https://user-images.githubusercontent.com/66476812/134195842-5db9317f-c02f-4e58-a30c-16f371a37a6b.png)
+
+
+STEPS TO RUN THE APP
+
+Clone the repo to your desired location in your system
+Cd to the repo on your system and run npm i in the terminal to install all the required dependencies and packages.
+After that run npm start.
+Browse to localhost:3000 and you will see the app running there.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
