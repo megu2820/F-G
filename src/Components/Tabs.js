@@ -4,7 +4,7 @@ import Form from "./Form.js";
 import TABLE from "./Table.js";
 function Tabs(props) {
   const [toggleState, setToggleState] = useState(1);
- console.log(props.tableData);
+
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -48,7 +48,7 @@ function Tabs(props) {
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
           <h2>All Feedback</h2>
-          <TABLE tableData={props.tableData}/>
+          <TABLE />
         </div>
       </div>
     </div>

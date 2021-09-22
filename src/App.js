@@ -21,7 +21,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Tabs data={data} tableData={tableData}addData={addData} />
+      <Tabs  addData={addData} />
     </div>
   );
 }

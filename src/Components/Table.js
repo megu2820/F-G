@@ -21,8 +21,8 @@ const Table = () => {
   for (let i = 0; i < localStorage.length; i++)        
    {allData= (JSON.parse(localStorage.getItem(localStorage.key(i))));}
    
-   console.log("megu");
-  console.log(allData);
+  //console.log("megu");
+  //console.log(allData);
   
   
   return (
