@@ -47,7 +47,7 @@ Here is the attached screenshot of section 2
 ![Screenshot (6)](https://user-images.githubusercontent.com/66476812/134195842-5db9317f-c02f-4e58-a30c-16f371a37a6b.png)
 
 
-STEPS TO RUN THE APP
+#STEPS TO RUN THE APP
 
 
 Clone the repo to your desired location in your system
