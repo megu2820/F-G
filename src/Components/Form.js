@@ -35,18 +35,18 @@ const Form = (props) => {
 
   return (
     <form id="myform" onSubmit={add}>
-      <div class="row">
+      <div className="row">
       <h5 className="success mt-3" style={{color:'green'}}>{success}</h5>
-        <div class="col">
-          <div class="mb-3 mt-3">
-            <label for="text" class="form-label">
+        <div className="col">
+          <div className="mb-3 mt-3">
+            <label htmlFor="text" className="form-label">
               Text Field
             </label>
             <input
             
               type="text"
               name="textfield"
-              class="form-control"
+              className="form-control"
               id="text"
               placeholder="Hello"
               onChange={handleChange}
@@ -54,15 +54,15 @@ const Form = (props) => {
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">
+          <div className="mb-3">
+            <label htmlFor="phone" className="form-label">
               Phone Field
             </label>
 
             <input
               name="phone"
               type="tel"
-              class="form-control"
+              className="form-control"
               id="phone"
               placeholder="1267893423"
               onChange={handleChange}
@@ -70,14 +70,14 @@ const Form = (props) => {
               required
             />
           </div>
-          <div class="mb-3 ">
-            <label class="form-label" for="name">
+          <div className="mb-3 ">
+            <label className="form-label" htmlFor="name">
               Name*
             </label>
             <input
               name="name"
               type="text"
-              class="form-control"
+              className="form-control"
               id="name"
               placeholder="Please Enter Name"
               onChange={handleChange}
@@ -86,30 +86,30 @@ const Form = (props) => {
             />
           </div>
         </div>
-        <div class="col">
-          <div class="mb-3 mt-3">
-            <label for="email" class="form-label">
+        <div className="col">
+          <div className="mb-3 mt-3">
+            <label htmlFor="email" className="form-label">
               Email address
             </label>
             <input
               name="email"
               type="email"
-              class="form-control"
+              className="form-control"
               id="email"
               onChange={handleChange}
               value={userinput.email}
               required
             />
 
-            <div class="row mb-3 mt-3">
-              <label for="rb1" class="form-label">
+            <div className="row mb-3 mt-3">
+              <label htmlFor="rb1" className="form-label">
                 Please rate the quality of the service you received from your
                 host
               </label>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd1"
                     id="excellent"
@@ -117,15 +117,15 @@ const Form = (props) => {
                   
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="excellent">
+                  <label className="form-check-label" htmlFor="excellent">
                     Excellent
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd1"
                     id="good"
@@ -133,15 +133,15 @@ const Form = (props) => {
                   
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="good">
+                  <label className="form-check-label" htmlFor="good">
                     Good
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd1"
                     id="fair"
@@ -149,15 +149,15 @@ const Form = (props) => {
                   
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="fair">
+                  <label className="form-check-label" htmlFor="fair">
                     Fair
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd1"
                     id="bad"
@@ -165,20 +165,20 @@ const Form = (props) => {
                  
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="bad">
+                  <label className="form-check-label" htmlFor="bad">
                     Bad
                   </label>
                 </div>
               </div>
             </div>
-            <div class="row mb-3 mt-3">
-              <label for="rb1" class="form-label">
+            <div className="row mb-3 mt-3">
+              <label htmlFor="rb1" className="form-label">
                 Please rate the quality of your beverage.
               </label>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd2"
                     id="excellent"
@@ -186,15 +186,15 @@ const Form = (props) => {
                  
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="excellent">
+                  <label className="form-check-label" htmlFor="excellent">
                     Excellent
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd2"
                     id="good"
@@ -202,15 +202,15 @@ const Form = (props) => {
                   
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="good">
+                  <label className="form-check-label" htmlFor="good">
                     Good
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd2"
                     id="fair"
@@ -218,15 +218,15 @@ const Form = (props) => {
                    
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="fair">
+                  <label className="form-check-label" htmlFor="fair">
                     Fair
                   </label>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-check">
+              <div className="col">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="rd2"
                     id="bad"
@@ -234,21 +234,21 @@ const Form = (props) => {
                 
                     onChange={handleChange}
                   />
-                  <label class="form-check-label" for="bad">
+                  <label className="form-check-label" htmlFor="bad">
                     Bad
                   </label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mb-3 mt-3">
-            <label for="rb1" class="form-label">
+          <div className="row mb-3 mt-3">
+            <label htmlFor="rb1" className="form-label">
               Was our restaurnat Clean?
             </label>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd3"
                   id="excellent"
@@ -256,15 +256,15 @@ const Form = (props) => {
                  
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="excellent">
+                <label className="form-check-label" htmlFor="excellent">
                   Excellent
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd3"
                   id="good"
@@ -272,15 +272,15 @@ const Form = (props) => {
               
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="good">
+                <label className="form-check-label" htmlFor="good">
                   Good
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd3"
                   id="fair"
@@ -288,15 +288,15 @@ const Form = (props) => {
             
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="fair">
+                <label className="form-check-label" htmlFor="fair">
                   Fair
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd3"
                   id="bad"
@@ -304,20 +304,20 @@ const Form = (props) => {
                  
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="bad">
+                <label className="form-check-label" htmlFor="bad">
                   Bad
                 </label>
               </div>
             </div>
           </div>
-          <div class="row mb-3 mt-3">
-            <label for="rb1" class="form-label">
+          <div className="row mb-3 mt-3">
+            <label htmlFor="rb1" className="form-label">
               Please rate your overall dining experience
             </label>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd4"
                   id="excellent"
@@ -325,15 +325,15 @@ const Form = (props) => {
                
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="excellent">
+                <label className="form-check-label" htmlFor="excellent">
                   Excellent
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd4"
                   id="good"
@@ -341,15 +341,15 @@ const Form = (props) => {
               
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="good">
+                <label className="form-check-label" htmlFor="good">
                   Good
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="rd4"
                   id="fair"
@@ -357,15 +357,15 @@ const Form = (props) => {
                  
                   onChange={handleChange}
                 />
-                <label class="form-check-label" for="fair">
+                <label className="form-check-label" htmlFor="fair">
                   Fair
                 </label>
               </div>
             </div>
-            <div class="col">
-              <div class="form-check">
+            <div className="col">
+              <div className="form-check">
                 <input
-                  class="form-check-input check"
+                  className="form-check-input check"
                   type="radio"
                   name="rd4"
                   value="bad"
@@ -373,7 +373,7 @@ const Form = (props) => {
                   onChange={handleChange}
                   
                 />
-                <label class="form-check-label" for="bad">
+                <label className="form-check-label" htmlFor="bad">
                   Bad
                 </label>
               </div>
@@ -383,7 +383,7 @@ const Form = (props) => {
       </div>
       <button
         type="submit"
-        class="btn btn-success "
+        className="btn btn-success "
         style={{ float: "right", marginTop: "30px" }}
       >
         Submit

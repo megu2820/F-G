@@ -1,7 +1,8 @@
 import "./App.css";
 import Tabs from "./Components/Tabs.js";
 import { useEffect, useState } from "react";
-import {uuid} from 'uuidv4'; // to have a unique id for each contact to faciliate delete operation
+import { v4 as uuid_v4 } from "uuid";
+// to have a unique id for each contact to faciliate delete operation
 function App() {
   const [data, setData] = useState(JSON.parse(localStorage.getItem('Data')));
  
@@ -15,7 +16,7 @@ function App() {
   const addData = (userinput) => {
     setData((data) => ([
       ...data,
-       {id:uuid(),...userinput}
+       {id:uuid_v4(),...userinput}
     ]));
   
   };
