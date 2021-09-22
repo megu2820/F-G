@@ -4,7 +4,10 @@ import { useEffect, useState } from "react";
 import { v4 as uuid_v4 } from "uuid";
 // to have a unique id for each contact to faciliate delete operation
 function App() {
-  const [data, setData] = useState(JSON.parse(localStorage.getItem('Data')));
+  let [data, setData] = useState(JSON.parse(localStorage.getItem('Data')));
+  if (data === null){
+    setData([]);
+  }
  
   useEffect(() => {
     

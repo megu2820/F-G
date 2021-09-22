@@ -18,8 +18,12 @@ let allData=[];
   
    
 const Table = () => {
+
   for (let i = 0; i < localStorage.length; i++)        
-   {allData= (JSON.parse(localStorage.getItem(localStorage.key(i))));}
+   {allData= (JSON.parse(localStorage.getItem(localStorage.key(i))));
+  if (allData === null){
+    allData= [];
+  }} 
    
   //console.log("megu");
   //console.log(allData);
